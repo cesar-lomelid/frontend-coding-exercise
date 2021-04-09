@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { makeServer } from './mock-api/server';
+
+makeServer({ environment: 'development' });
 
 ReactDOM.render(
   <React.StrictMode>
